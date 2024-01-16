@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新增视频标签</title>
+    <style>
+        video {
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 一般不用width和hight属性调整宽高 -->
+    <!-- controls属性: 视频播放控制组件 -->
+    <!-- muted属性: 视频静音 -->
+    <!-- autoplay属性: 自动播放 -->
+    <!-- 必须muted才能autoplay -->
+    <!-- loop属性: 让视频在播放结束后自动重新播放 -->
+    <!-- poster属性: 指定视频封面图片地址 -->
+    <!-- preload属性: 视频预加载. auto: 自动; none: 不预加载; metadata: 加载视频元信息, 比如时长等信息 -->
+    <video src="./flower.webm" controls muted preload="metadata"></video>
+</body>
+
+</html>

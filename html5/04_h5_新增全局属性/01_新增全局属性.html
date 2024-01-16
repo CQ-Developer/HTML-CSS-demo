@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新增全局属性</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 200px;
+        }
+        .box1 {
+            background-color: skyblue;
+        }
+        .box2 {
+            margin-top: 10px;
+            background-color: green;
+        }
+        .box3 {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- contenteditable: 内容是否可编辑 -->
+    <!-- spellcheck属性: 拼写检查, 需要打开浏览器的拼写检查设置 -->
+    <div class="box box1" contenteditable="true" spellcheck="true">Lorem ipsum dolor sit amet.</div>
+    <!-- draggable: 元素是否可拖动 -->
+    <div class="box box2" draggable="true">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, perferendis.</div>
+    <!-- hidden属性: 和display: none相同 -->
+    <h1 hidden>hello</h1>
+    <!-- contextmenu属性: 定制化鼠标邮件的选项 -->
+    <!-- data-*属性: 私有数据, 在元素身上隐藏数据 -->
+    <div class="box box3" data-a="some data">data</div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新增长度单位</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-size: 40px;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+
+        .box2 {
+            /* vw(view-port width) 视口宽度 */
+            /* 视口宽度的50% */
+            width: 50vw;
+            /* vh(view-port height) 视口高度 */
+            /* 视口高度的50% */
+            height: 50vh;
+            background-color: green;
+            margin: 0px auto;
+        }
+
+        .box3 {
+            /* vmax(view-port max) 视口的最大值, 选视口宽度或高度中较大的那个 */
+            width: 20vmax;
+            /* vmin(view-port min) 视口的最小值, 选视口宽度或高度中较小的那个 */
+            height: 20vmin;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">像素</div>
+    <div class="box2">vw和vh</div>
+    <div class="box3">vmax</div>
+</body>
+
+</html>

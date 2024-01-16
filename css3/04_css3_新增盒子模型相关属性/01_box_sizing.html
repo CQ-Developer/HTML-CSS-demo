@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bix sizing</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+            padding: 5px;
+            border: 5px solid black;
+        }
+        .box2 {
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            padding: 5px;
+            border: 5px solid black;
+            /* 将width和height命中盒子的总宽高 默认是content-box*/
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

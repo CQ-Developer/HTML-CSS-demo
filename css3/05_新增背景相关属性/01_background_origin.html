@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>background origin</title>
+    <style>
+        .box1 {
+            width: 400px;
+            height: 400px;
+            margin: 0px auto;
+            background-color: skyblue;
+            font-size: 40px;
+            padding: 50px;
+            border: 50px dashed rgba(255, 0, 0, 0.7);
+            
+            /*
+            设置背景图的起点
+            从padding的左上角开始铺图, 也就是说padding-box是默认值
+            content-box: 从内容区左上角开始铺图
+            border-box: 从边框的起点开始铺图
+             */
+            background-origin: border-box;
+            background-image: url("../images/飞机.jpg");
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">你好啊</div>
+</body>
+
+</html>

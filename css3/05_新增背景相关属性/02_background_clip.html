@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>background clip</title>
+    <style>
+        .box1 {
+            width: 600px;
+            height: 400px;
+            margin: 0px auto;
+            background-color: skyblue;
+            font-size: 150px;
+            color: transparent;
+            font-weight: 40px;
+            padding: 50px;
+            border: 50px dashed rgba(255, 0, 0, 0.7);
+
+            /* 
+            border-box: 边框以外的背景图不可见
+            padding-box: padding以外的不可见
+            content-box: 超出内容区以外不可见
+            text: 铺在文字上, 需要文字是透明的
+             */
+            background-clip: text;
+            background-repeat: no-repeat;
+            background-image: url("../images/大飞机.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">你好啊</div>
+</body>
+
+</html>
