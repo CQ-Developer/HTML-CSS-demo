@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文本溢出</title>
+    <style>
+        ul {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            font-size: 20px;
+            list-style-type: none;
+            padding-left: 0px;
+        }
+        li {
+            margin-bottom: 10px;
+            /* 必须 */
+            overflow: hidden;
+            /* 不换行 */
+            white-space: nowrap;
+            /* 省略号 */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, maxime?</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum cumque quisquam saepe quas veniam consectetur fuga distinctio non sed asperiores!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sunt ipsa modi cupiditate! Quibusdam praesentium, tempore repellat, accusamus laudantium delectus fugit, soluta architecto eveniet eaque velit explicabo iure necessitatibus optio?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat provident iure voluptate aliquid corrupti in quasi adipisci alias deserunt eveniet doloremque aut atque cupiditate optio natus dicta, at dolor rerum sequi aspernatur voluptatibus beatae explicabo modi. Error officiis alias incidunt!</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium deleniti ratione cupiditate quam? Odio consectetur dolorem itaque! Eos itaque explicabo fugit debitis minima eum, blanditiis optio sit ipsa architecto, inventore asperiores ab et iusto quae dignissimos est obcaecati facere ut.</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores veniam labore sint veritatis aliquid porro dicta itaque voluptatem dolores corporis, impedit debitis, ratione possimus, voluptate quia aspernatur unde fugiat. Obcaecati illum animi autem incidunt laborum inventore sint in, iste, molestiae, libero atque nemo corporis minus repellendus. Repellat, sit. Corrupti, iure?</li>
+    </ul>
+</body>
+
+</html>
