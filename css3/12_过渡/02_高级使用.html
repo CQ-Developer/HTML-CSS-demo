@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>01_基本使用</title>
+    <style>
+        .outer {
+            width: 1300px;
+            height: 900px;
+            border: 1px solid black;
+        }
+
+        .outer:hover .box {
+            width: 1300px;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            transition-property: all;
+            transition-duration: 5s;
+
+            /* 过渡延迟 */
+            /* transition-delay: 2s; */
+        }
+
+        .box1 {
+            background-color: skyblue;
+            /* 过渡效果: 平滑(默认) */
+            transition-timing-function: ease;
+        }
+
+        .box2 {
+            background-color: skyblue;
+            /* 过渡效果: 线性 */
+            transition-timing-function: linear;
+        }
+
+        .box3 {
+            background-color: gray;
+            /* 过渡效果: 先慢再快 */
+            transition-timing-function: ease-in;
+        }
+
+        .box4 {
+            background-color: tomato;
+            /* 过渡效果: 先快再慢 */
+            transition-timing-function: ease-out;
+        }
+
+        .box5 {
+            background-color: green;
+            /* 过渡效果: 先慢再快再慢 */
+            transition-timing-function: ease-in-out;
+        }
+
+        .box6 {
+            background-color: purple;
+            /* 过渡效果: 一开始直接过渡到终点 不考虑过渡时间 */
+            transition-timing-function: step-start;
+        }
+
+        .box7 {
+            background-color: deepskyblue;
+            /* 过渡效果: 过渡时间最后直接过渡到终点 */
+            transition-timing-function: step-end;
+        }
+
+        .box8 {
+            background-color: chocolate;
+            /* 过渡效果: 分步进行过渡 */
+            transition-timing-function: steps(20, end);
+        }
+
+        .box9 {
+            background-color: black;
+            /* 过渡效果: 贝塞尔曲线 */
+            transition-timing-function: cubic-bezier(.72, 1.1, .54, 1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+</body>
+
+</html>
