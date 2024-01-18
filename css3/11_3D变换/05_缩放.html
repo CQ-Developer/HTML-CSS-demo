@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>05_缩放</title>
+    <style>
+        .outer {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 0px auto;
+            margin-top: 100px;
+            transform-style: preserve-3d;
+            perspective: 100px;
+            /* perspective-origin: 200px 200px; */
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 191, 255, 0.7);
+            text-align: center;
+            font-size: 20px;
+
+            /* 2D缩放 scaleX影响元素的宽度 scaleY影响元素的高度 */
+            /* transform: scaleX(0.8); */
+            /* transform: scaleY(1.2); */
+
+            /* scaleZ实际上会改变景深 */
+            /* transform: scaleZ(2) rotateY(45deg); */
+
+            transform: scale3d(1.5, 1.5, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">你好</div>
+    </div>
+</body>
+
+</html>
