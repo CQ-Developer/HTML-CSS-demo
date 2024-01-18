@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>02_透视点的位置</title>
+    <style>
+        .outer {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 0px auto;
+            margin-top: 100px;
+            transform-style: preserve-3d;
+            perspective: 150px;
+            perspective-origin: 200px 200px;
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 191, 255, 0.603);
+            line-height: 200px;
+            text-align: center;
+            /* 使用translate3d的话3个方向上的数值必须都写 */
+            transform: translate3d(100px, 100px, 40px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">你好</div>
+    </div>
+</body>
+
+</html>
