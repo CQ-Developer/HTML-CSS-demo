@@ -20,11 +20,139 @@
         ul {
             list-style: none;
         }
+
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-image: url("./images/xx");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .page-header {
+            height: 70px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 0px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-header-nav {
+            display: flex;
+        }
+
+        .page-header-nav li a {
+            color: white;
+            font-size: 20px;
+            border: 1px solid white;
+            border-radius: 8px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .page-header-nav li:last-child {
+            margin-right: 0px;
+        }
+
+        .page-content {
+            display: flex;
+            /* calc可以进行数学计算 */
+            /* vh代表视口高度 */
+            height: calc(100vh - 70px);
+        }
+
+        .content-nav {
+            width: 1000px;
+            height: 300px;
+            margin: auto;
+            display: flex;
+        }
+
+        content-nav .items {
+            width: 100px;
+            height: 200px;
+            justify-content: space-evenly;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            transition: 200ms linear;
+        }
+
+        content-nav .items:hover {
+            box-shadow: 0px 0px 20px black;
+            cursor: pointer;
+        }
+
+        content-nav .items span {
+            font-size: 20px;
+            color: white;
+        }
+
+        content-nav .items:nth-child(1) {
+            background-color: #595CA8;
+        }
+
+        content-nav .items:nth-child(2) {
+            background-color: #595CA8;
+        }
+
+        content-nav .items:nth-child(3) {
+            background-color: #595CA8;
+        }
+
+        content-nav .items:nth-child(4) {
+            background-color: #595CA8;
+        }
+
+        content-nav .items:nth-child(5) {
+            background-color: #595CA8;
+        }
     </style>
 </head>
 
 <body>
-
+    <header class="page-header">
+        <a href="">
+            <img src="./images/xx">
+        </a>
+        <ul class="page-header-nav">
+            <li><a href="#">国内校区</a></li>
+            <li><a href="#">缅甸校区</a></li>
+            <li><a href="#">非洲校区</a></li>
+            <li><a href="#">美国校区</a></li>
+        </ul>
+    </header>
+    <div class="page-content">
+        <div class="content-nav">
+            <div class="items">
+                <img src="../images/xx">
+                <span>我的邮箱</span>
+            </div>
+            <div class="items">
+                <img src="../images/xx">
+                <span>云服务</span>
+            </div>
+            <div class="items">
+                <img src="../images/xx">
+                <span>手机课堂</span>
+            </div>
+            <div class="items">
+                <img src="../images/xx">
+                <span>微信服务</span>
+            </div>
+            <div class="items">
+                <img src="../images/xx">
+                <span>在线客服</span>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
