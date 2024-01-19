@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>侧轴单行对齐方式</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 600px;
+            background-color: gray;
+            margin: 0px auto;
+
+            /* 伸缩盒模型相关属性 */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            /* 侧轴对齐方式: 侧轴起始位置 */
+            align-items: flex-start;
+
+            /* 侧轴对齐方式: 侧轴结束位置 */
+            /* align-items: flex-end; */
+
+            /* 侧轴对齐方式: 侧轴中间位置 */
+            /* align-items: center; */
+
+            /* 侧轴对齐方式: 侧轴基线位置 */
+            /* align-items: baseline; */
+
+            /* 侧轴对齐方式: 拉伸到整个父容器 仅在项目没有高度的情况下生效 默认值 */
+            /* align-items: stretch; */
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .inner2 {
+            height: 300px;
+            font-size: 80px;
+        }
+
+        .inner3 {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner inner1">1x</div>
+        <div class="inner inner2">2x</div>
+        <div class="inner inner3">3x</div>
+    </div>
+</body>
+
+</html>
