@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>02_媒体查询_媒体特性</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            height: 200px;
+            background-color: gray;
+            text-align: center;
+            line-height: 200px;
+            font-size: 100px;
+        }
+
+        /* 检测到视口的宽度为800px时应用如下样式 */
+        @media (width: 800px) {
+            h1 {
+                background-color: green;
+            }
+        }
+
+        /* 检测到视口的宽度小于等于700px时应用如下样式 */
+        @media (max-width: 700px) {
+            h1 {
+                background-color: orange;
+            }
+        }
+
+        /* 检测到视口的宽度大于等于900px时应用如下样式 */
+        @media (min-width: 900px) {
+            h1 {
+                background-color: deepskyblue;
+            }
+        }
+
+        /* 可以查询视口高度 但是一般不用 */
+        /* @media (height: 900px) {
+            h1 {
+                background-color: yellow;
+            }
+        } */
+
+        /* 可以查询设备的宽度，相当于整个显示器的宽度 */
+        /* @media (device-width: 900px) {
+            h1 {
+                color: white;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>你好啊</h1>
+</body>
+
+</html>

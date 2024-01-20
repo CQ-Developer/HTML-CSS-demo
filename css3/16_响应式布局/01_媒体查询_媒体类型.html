@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>01_媒体查询</title>
+    <style>
+        h1 {
+            width: 600px;
+            height: 400px;
+            background-image: linear-gradient(30deg, red, yellow, green);
+            margin: 0px auto;
+            text-align: center;
+            line-height: 400px;
+            font-size: 100px;
+            color: white;
+            text-shadow: 0px 0px 10px black;
+        }
+
+        /* 注意: 媒体查询不提高任何优先级 */
+        /* 只有在打印机或打印预览中才应用的样式 */
+        @media print {
+            h1 {
+                background: transparent;
+            }
+        }
+
+        /* 仅在屏幕上 */
+        @media screen {
+            h1 {
+                font-family: "宋体";
+            }
+        }
+
+        /* 所有 */
+        @media all {
+            h1 {
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>新年快乐</h1>
+</body>
+
+</html>
