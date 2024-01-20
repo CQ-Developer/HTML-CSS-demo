@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>01_BFC_演示</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            /* 变为伸缩项目会开启BFC */
+            /* 注意当前body是伸缩容器 */
+            /* display: flex; */
+        }
+
+        .outer {
+            width: 400px;
+            background-color: gray;
+
+            /* 浮动元素会开启BFC */
+            /* float: left; */
+
+            /* 绝对定位或固定定位会开启BFC */
+            /* position: absolute; */
+
+            /* 行内块元素会开启BFC */
+            /* display: inline-block; */
+
+            /* 表格相关元素会开启BFC */
+            /* display: table; */
+
+            /* overflow不会visible的元素会开启BFC */
+            /* overflow: hidden; */
+
+            /* 多列容器会开启BFC */
+            /* column-count: 1; */
+
+            /* display值为flow-root也会开启BFC */
+            /* display: flow-root; */
+
+            /* 这种方式也能解决margin塌陷问题，但它并没有开启BFC */
+            /* border: 1px solid red; */
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+
+        .inner1 {
+            background-color: orange;
+        }
+
+        .inner2 {
+            background-color: green;
+        }
+
+        .inner3 {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 元素开启BFC后，其子元素不会产生margin塌陷问题 -->
+    <div class="outer">
+        <div class="inner inner1"></div>
+        <div class="inner inner2"></div>
+        <div class="inner inner3"></div>
+    </div>
+</body>
+
+</html>

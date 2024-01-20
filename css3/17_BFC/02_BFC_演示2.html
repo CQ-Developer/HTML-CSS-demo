@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>02_BFC_演示2</title>
+    <style>
+        body {
+            /* 变为伸缩项目会开启BFC */
+            /* 注意当前body是伸缩容器 */
+            /* display: flex; */
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1 {
+            background-color: orange;
+            float: left;
+        }
+
+        .box2 {
+            background-color: green;
+            
+            /* 浮动元素会开启BFC */
+            /* float: left; */
+
+            /* 绝对定位或固定定位会开启BFC */
+            /* position: absolute; */
+
+            /* 行内块元素会开启BFC */
+            /* display: inline-block; */
+
+            /* 表格相关元素会开启BFC */
+            /* display: table; */
+
+            /* overflow不会visible的元素会开启BFC */
+            /* overflow: hidden; */
+
+            /* 多列容器会开启BFC */
+            /* column-count: 1; */
+
+            /* display值为flow-root也会开启BFC */
+            /* display: flow-root; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 元素开启BFC后，自己不会被其他浮动元素所覆盖 -->
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+</body>
+
+</html>

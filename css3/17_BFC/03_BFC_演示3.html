@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>03_BFC_演示3</title>
+    <style>
+        body {
+            /* 变为伸缩项目会开启BFC */
+            /* 注意当前body是伸缩容器 */
+            /* display: flex; */
+        }
+        .outer {
+            width: 600px;
+            background-color: gray;
+            
+            /* 浮动元素会开启BFC */
+            /* float: left; */
+
+            /* 据对定位元素会开启BFC */
+            /* position: absolute; */
+
+            /* 行内块元素会开启BFC */
+            /* display: inline-block; */
+
+            /* 表格相关元素会开启BFC */
+            /* display: table; */
+
+            /* overflow不为visible的元素会开启BFC */
+            /* overflow: hidden; */
+
+            /* 多列容器会开启BFC */
+            /* column-count: 1; */
+
+            /* display为flow-root的元素也会开启BFC */
+            /* display: flow-root; */
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+
+        .inner1 {
+            background-color: orange;
+        }
+
+        .inner2 {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 元素开启BFC后，就算其子元素浮动，元素自身高度也不会塌陷 -->
+    <div class="outer">
+        <div class="inner inner1"></div>
+        <div class="inner inner2"></div>
+    </div>
+</body>
+
+</html>
